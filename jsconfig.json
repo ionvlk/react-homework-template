@@ -1,6 +1,17 @@
 {
   "compilerOptions": {
-    "baseUrl": "src"
+    "baseUrl": "./src", //specifies the relative path to the src directory
+    "target": "esnext", //specifes the output target of the compiled code
+    "module": "esnext", //specifies the module system used
+    "strict": true, //enables strict type checking
+    "esModuleInterop": true //enables compatibility with CommonJS modules
   },
-  "include": ["src"]
+  "include": ["src/**/*"] //specifies all files in src directory and any subdirectories
 }
+
+// {
+//   "compilerOptions": {
+//     "baseUrl": "src"
+//   },
+//   "include": ["src"]
+// }
